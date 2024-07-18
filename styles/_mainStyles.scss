@@ -1,0 +1,60 @@
+body {
+  background-color: $whiteColor;
+
+  .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $whiteColor;
+    color: $darkGrayColor;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.start-creating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      background-color: $yellowColor;
+      color: $blackColor;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+
+      &.main {
+        position: absolute;
+        top: 700px;
+        left: 50%;
+        width: 280px;
+        height: 70px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+        transform: translateX(-50%);
+
+        @media (max-width: 768px) {
+          top: 250px;
+          width: 200px;
+          height: 60px;
+          font-size: 1.2rem;
+          letter-spacing: 3px;
+        }
+      }
+
+      i {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        color: $primary-color;
+      }
+    }
+
+    &:hover {
+      background-color: $yellowHoverColor;
+    }
+  }
+}

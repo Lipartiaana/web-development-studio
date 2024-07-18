@@ -74,6 +74,63 @@ footer {
     transform: translateX(0);
   }
 }
+body {
+  background-color: #fff;
+}
+body .btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body .btn.start-creating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: #fffb00;
+  color: #000;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+body .btn.start-creating.main {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  width: 280px;
+  height: 70px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  body .btn.start-creating.main {
+    top: 250px;
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+}
+body .btn.start-creating i {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  color: #2271a5;
+}
+body .btn:hover {
+  background-color: #ffe600;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -212,5 +269,64 @@ footer {
   }
   .header .nav .burger.active span:nth-child(3) {
     transform: rotate(45deg) translate(-8px, -10px);
+  }
+}
+.hero-img img {
+  width: 100%;
+  height: calc(100vh - 90px);
+  min-height: 800px;
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-img .animation-container {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .hero-img .animation-container {
+    top: 50%;
+  }
+}
+.hero-img .animation-container .typing-animation {
+  display: inline-block;
+  overflow: hidden;
+}
+.hero-img .animation-container .animated-text {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #2e15b8;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (max-width: 1400px) {
+  .hero-img .animation-container .animated-text {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 1120px) {
+  .hero-img .animation-container .animated-text {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 900px) {
+  .hero-img .animation-container .animated-text {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-img .animation-container .animated-text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .hero-img .animation-container .animated-text {
+    font-size: 2.2rem;
   }
 }/*# sourceMappingURL=global.css.map */
