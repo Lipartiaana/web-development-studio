@@ -6,3 +6,21 @@
     transform: translateX(0);
   }
 }
+
+@keyframes pulse {
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInSemiCircle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

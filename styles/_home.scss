@@ -1,5 +1,7 @@
-.hero-img {
-  img {
+.hero {
+  line-height: 0;
+
+  &__img {
     width: 100%;
     height: calc(100vh - 90px);
     min-height: 800px;
@@ -11,10 +13,8 @@
     position: absolute;
     top: 40%;
     left: 10%;
-    display: flex;
+    @include display_flex();
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
 
     @media (max-width: 768px) {
@@ -24,6 +24,7 @@
     .typing-animation {
       display: inline-block;
       overflow: hidden;
+      line-height: 1.5;
     }
 
     .animated-text {
@@ -52,6 +53,133 @@
       @media (max-width: 400px) {
         font-size: 2.2rem;
       }
+    }
+  }
+}
+
+.main-description {
+  background-color: $primary-color;
+
+  &__content {
+    @include display_flex();
+    flex-direction: column;
+    color: $whiteColor;
+    line-height: 2rem;
+    padding: 2rem 5rem 2rem 2rem;
+
+    @media (max-width: 1080px) {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+      }
+    }
+  }
+
+  &__animation {
+    position: relative;
+    z-index: 0;
+    background-color: transparent;
+    @include display_flex();
+    width: 100%;
+    min-height: 80vh;
+    overflow: hidden;
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 769px) {
+      height: auto;
+    }
+  }
+
+  .pulse {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30rem;
+
+    circle {
+      fill: #ff5154;
+      transform: scale(0);
+      opacity: 0;
+      transform-origin: 50% 50%;
+      animation: pulse 4s cubic-bezier(0.5, 0.5, 0, 1) infinite;
+
+      &:nth-child(2) {
+        fill: #7fc6a4;
+        animation: pulse 4s 0.75s cubic-bezier(0.5, 0.5, 0, 1) infinite;
+      }
+
+      &:nth-child(3) {
+        fill: #e5f77d;
+        animation: pulse 4s 1.5s cubic-bezier(0.5, 0.5, 0, 1) infinite;
+      }
+    }
+  }
+
+  &__illustration {
+    width: 400%;
+    @include display_flex();
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+
+      @media (max-width: 1700px) {
+        width: 550px;
+        height: 340px;
+      }
+
+      @media (max-width: 1400px) {
+        width: 450px;
+        height: 260px;
+      }
+
+      @media (max-width: 1280px) {
+        padding: 1rem;
+      }
+
+      @media (max-width: 500px) {
+        width: 300px;
+        height: 180px;
+      }
+    }
+  }
+
+  .semi-circle {
+    position: absolute;
+    right: -50%;
+    top: -50%;
+    width: 100vw;
+    height: 100vw;
+    background-color: #fff;
+    border-radius: 100%;
+    z-index: -1;
+    animation: fadeInSemiCircle 2s ease-in-out;
+
+    @media (max-width: 1700px) {
+      right: -55%;
+    }
+
+    @media (max-width: 1280px) {
+      display: none;
     }
   }
 }
