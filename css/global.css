@@ -482,4 +482,108 @@ body .btn:hover {
   .main-description .semi-circle {
     display: none;
   }
+}
+
+.services {
+  margin: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #fff;
+  padding: 80px 100px;
+}
+@media (max-width: 1700px) {
+  .services {
+    padding: 40px 10px;
+  }
+}
+@media (max-width: 992px) {
+  .services {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    margin: 5px;
+  }
+}
+@media (max-width: 460px) {
+  .services {
+    grid-template-columns: 1fr;
+    padding: 30px 5px;
+    margin: 5px;
+  }
+}
+.services__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services__column h2 {
+  text-align: center;
+  color: #000;
+}
+.services__column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+}
+.services__column ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  list-style-type: circle;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+@media (max-width: 769px) {
+  .services__column ul li {
+    padding-left: 0px;
+  }
+}
+.services__column ul li a {
+  color: #000;
+  transition: all 0.3s ease;
+}
+.services__column ul li a:hover {
+  color: #2271a5;
+}
+.services__column ul li:hover {
+  cursor: pointer;
+  color: #2271a5;
+  transform: translateX(10px);
+}
+.services__column .technologies {
+  text-align: center;
+  color: #000;
+}
+.services__column .technologies .technology {
+  background-color: #333;
+  border: 5px solid #fffb00;
+  box-shadow: 2px 3px #ffe600;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 25px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  transition: box-shadow 0.5s ease;
+}
+@media (max-width: 1500px) {
+  .services__column .technologies .technology {
+    margin: 10px;
+  }
+}
+@media (max-width: 1360px) {
+  .services__column .technologies .technology {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+.services__column .technologies .technology:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=global.css.map */

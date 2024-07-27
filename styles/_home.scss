@@ -169,7 +169,7 @@
     top: -50%;
     width: 100vw;
     height: 100vw;
-    background-color: #fff;
+    background-color: $whiteColor;
     border-radius: 100%;
     z-index: -1;
     animation: fadeInSemiCircle 2s ease-in-out;
@@ -180,6 +180,111 @@
 
     @media (max-width: 1280px) {
       display: none;
+    }
+  }
+}
+
+.services {
+  margin: $section-margin;
+  @include disply_grid();
+  gap: 20px;
+  background-color: $whiteColor;
+  padding: 80px 100px;
+
+  @media (max-width: 1700px) {
+    padding: 40px 10px;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    margin: 5px;
+  }
+
+  @media (max-width: 460px) {
+    grid-template-columns: 1fr;
+    padding: 30px 5px;
+    margin: 5px;
+  }
+
+  &__column {
+    @include display_flex();
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      color: $blackColor;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      margin-left: 30px;
+
+      li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        list-style-type: circle;
+        font-size: 18px;
+        color: $blackColor;
+        transition: all 0.3s ease;
+
+        @media (max-width: 769px) {
+          padding-left: 0px;
+        }
+
+        a {
+          color: $blackColor;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: $primary-color;
+          transform: translateX(10px);
+        }
+      }
+    }
+
+    .technologies {
+      text-align: center;
+      color: #000;
+
+      .technology {
+        background-color: $darkGrayColor;
+        border: 5px solid $yellowColor;
+        box-shadow: 2px 3px $yellowHoverColor;
+        border-radius: 10px;
+        color: $whiteColor;
+        padding: 10px 25px;
+        margin: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        transition: box-shadow 0.5s ease;
+
+        @media (max-width: 1500px) {
+          margin: 10px;
+        }
+
+        @media (max-width: 1360px) {
+          font-size: 1rem;
+          padding: 10px 15px;
+        }
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+      }
     }
   }
 }

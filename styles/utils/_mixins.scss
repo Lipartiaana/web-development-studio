@@ -3,3 +3,8 @@
   justify-content: $x;
   align-items: $y;
 }
+
+@mixin disply_grid($x: 2, $y: 1fr) {
+  display: grid;
+  grid-template-columns: repeat($x, $y);
+}
