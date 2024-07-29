@@ -5,7 +5,7 @@ body {
     margin-top: 20px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: $whiteColor;
+    background-color: $yellowColor;
     color: $darkGrayColor;
     border: none;
     border-radius: 5px;
@@ -20,7 +20,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 200px;
-      background-color: $yellowColor;
       color: $blackColor;
       padding: 15px 20px;
       border-radius: 8px;
@@ -56,5 +55,10 @@ body {
     &:hover {
       background-color: $yellowHoverColor;
     }
+  }
+
+  h2 {
+    color: $primary-color;
+    text-transform: uppercase;
   }
 }

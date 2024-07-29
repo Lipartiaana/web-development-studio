@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web studio</title>
+    <!-- icons -->
     <script
       src="https://kit.fontawesome.com/a117407e76.js"
       crossorigin="anonymous"
     ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- global css -->
     <link rel="stylesheet" href="./css/global.css" />
   </head>
   <body>
@@ -130,7 +138,86 @@
         </div>
       </div>
     </section>
+    <section class="projects">
+      <h2>Our projects</h2>
+      <p>
+        In our portfolio you can see how we cooperate with companies completed
+        projects as well as sales page templates.
+      </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              href="https://lipartiaana.github.io/Furniture-house/"
+              target="_blank"
+            >
+              <img
+                src="./assets/projects/Furniture-house-thumbnail.png"
+                alt="project1"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://lipartiaana.github.io/Construction-company/"
+              target="_blank"
+            >
+              <img
+                src="./assets/projects/Construction-company-thumbnail.png"
+                alt="project2"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://lipartiaana.github.io/Legal-Services-page/"
+              target="_blank"
+            >
+              <img
+                src="./assets/projects/Legal-services-page-thumbnail.png"
+                alt="project3"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://lipartiaana.github.io/Tourist-landing-page/"
+              target="_blank"
+            >
+              <img
+                src="./assets/projects/Tourist-landing-page-thumbnail.png"
+                alt="project4"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://lipartiaana.github.io/Travel-in-Georgia/"
+              target="_blank"
+            >
+              <img
+                src="./assets/projects/Travel-in-Georgia-thumbnail.png"
+                alt="project4"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://lipartiaana.github.io/Memory-game/"
+              target="_blank"
+            >
+              <img
+                src="./assets/projects/Memory-game-thumbnail.png"
+                alt="project4"
+            /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <a href="./html/portfolio.html">
+        <button class="portpholio-btn btn">
+          All projects <i class="fa-solid fa-arrow-right"></i></button
+      ></a>
+    </section>
     <script src="./js/navigation.js"></script>
     <script src="./js/text-animation.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
