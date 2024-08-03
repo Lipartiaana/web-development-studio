@@ -661,4 +661,275 @@ body h2 {
 .projects .portpholio-btn i {
   padding-left: 10px;
   color: #fff;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+}
+.contact img {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+@media (max-width: 769px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact img {
+    height: 1200px;
+  }
+}
+.contact .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+}
+.contact .social-media__links__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.contact .social-media .social-icon i {
+  margin: 0px 15px 0px -20px;
+}
+.contact .contact-form,
+.contact .social-media {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7333333333);
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  height: 500px;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 400px) {
+  .contact .contact-form,
+  .contact .social-media {
+    width: 100%;
+    margin: 10px 2px;
+  }
+}
+.contact .contact-form h2,
+.contact .social-media h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.contact .contact-form .envelope,
+.contact .social-media .envelope {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.contact .contact-form .envelope .back,
+.contact .social-media .envelope .back {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: #2271a5;
+}
+.contact .contact-form .envelope .letter,
+.contact .social-media .envelope .letter {
+  position: absolute;
+  background-color: #fff;
+  width: 230px;
+  height: 180px;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s;
+}
+.contact .contact-form .envelope .letter:before,
+.contact .social-media .envelope .letter:before {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  width: 80px;
+  height: 80px;
+  top: 75px;
+  left: 75px;
+}
+.contact .contact-form .envelope .letter:after,
+.contact .social-media .envelope .letter:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  top: 82px;
+  left: 82px;
+  box-shadow: 36px 0 #fff, 36px 36px #fff, 0px 36px #fff;
+}
+.contact .contact-form .envelope .text,
+.contact .social-media .envelope .text {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.contact .contact-form .envelope .text:before, .contact .contact-form .envelope .text:after,
+.contact .social-media .envelope .text:before,
+.contact .social-media .envelope .text:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  border-radius: 10px;
+  background-color: #333;
+  height: 20px;
+  top: 60px;
+}
+.contact .contact-form .envelope .text:before,
+.contact .social-media .envelope .text:before {
+  left: 108px;
+  transform: rotate(-25deg);
+}
+.contact .contact-form .envelope .text:after,
+.contact .social-media .envelope .text:after {
+  left: 118px;
+  transform: rotate(25deg);
+}
+.contact .contact-form .envelope .front,
+.contact .social-media .envelope .front {
+  position: absolute;
+  border-right: 130px solid #0055ff;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 120px;
+  z-index: 3;
+}
+.contact .contact-form .envelope .front:before,
+.contact .social-media .envelope .front:before {
+  content: "";
+  position: absolute;
+  border-left: 130px solid #0055ff;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: -100px;
+  left: -120px;
+}
+.contact .contact-form .envelope .front:after,
+.contact .social-media .envelope .front:after {
+  content: "";
+  position: absolute;
+  border-bottom: 105px solid #0055ff;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  height: 0;
+  width: 0;
+  top: -5px;
+  left: -120px;
+}
+.contact .contact-form .envelope .top,
+.contact .social-media .envelope .top {
+  position: absolute;
+  border-top: 105px solid #266fff;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  transform-origin: top;
+  transition: 0.4s;
+}
+.contact .contact-form .envelope .shadow,
+.contact .social-media .envelope .shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 10px;
+  top: 220px;
+  border-radius: 50%;
+}
+.contact .contact-form .envelope:hover .top,
+.contact .social-media .envelope:hover .top {
+  transform: rotateX(160deg);
+}
+.contact .contact-form .envelope:hover .letter,
+.contact .social-media .envelope:hover .letter {
+  transform: translateY(-100px);
+  z-index: 2;
+}
+.contact .contact-form form,
+.contact .social-media form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact-form form .input-container,
+.contact .social-media form .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact-form form .input-container label,
+.contact .social-media form .input-container label {
+  font-weight: 500;
+  padding-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+.contact .contact-form form .input-container input,
+.contact .contact-form form .input-container textarea,
+.contact .social-media form .input-container input,
+.contact .social-media form .input-container textarea {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+.contact .contact-form form .input-container input:hover,
+.contact .contact-form form .input-container textarea:hover,
+.contact .social-media form .input-container input:hover,
+.contact .social-media form .input-container textarea:hover {
+  border-color: #3498db;
+}
+.contact .contact-form form .input-container input:focus,
+.contact .contact-form form .input-container textarea:focus,
+.contact .social-media form .input-container input:focus,
+.contact .social-media form .input-container textarea:focus {
+  outline: none;
+  background-color: rgba(52, 152, 219, 0.5215686275);
+}
+.contact .contact-form form .input-container textarea,
+.contact .social-media form .input-container textarea {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.contact .contact-form form button,
+.contact .social-media form button {
+  background-color: #042b4d;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact .contact-form form button:hover,
+.contact .social-media form button:hover {
+  background-color: #2271a5;
 }/*# sourceMappingURL=global.css.map */
