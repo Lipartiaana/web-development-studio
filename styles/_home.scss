@@ -331,7 +331,9 @@
 
         img {
           display: block;
+          margin: 0 auto;
           width: 100%;
+          max-width: 500px;
           height: 100%;
           object-fit: cover;
           border-radius: 6px;
@@ -378,10 +380,11 @@
   }
 
   @include display_flex();
-  padding: 120px 20px;
+  padding: 120px 20px 90px 20px;
 
   @media (max-width: 769px) {
     flex-direction: column;
+    padding-bottom: 80px;
 
     img {
       height: 1200px;

@@ -1,0 +1,100 @@
+footer {
+  width: 100%;
+  background-color: $darkBlueColor;
+  @include display_flex();
+  flex-direction: column;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1360px;
+    @include display_flex(space-between);
+    padding: 4rem 1rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 4rem 1rem 2rem 1rem;
+    }
+
+    .footer-column {
+      width: 300px;
+
+      &.center {
+        @include display_flex();
+
+        @media (max-width: 768px) {
+          @include display_flex(flex-start);
+          margin: 0px auto 10px auto;
+
+          .btn {
+            padding: 10px;
+            width: 150px;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &.right {
+        @include display_flex(flex-end);
+        @media (max-width: 768px) {
+          @include display_flex(flex-start);
+          i {
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+
+    .footer-nav {
+      &__links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          color: $whiteColor;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      i {
+        font-size: 1.5rem;
+        padding: 1.1rem;
+        color: $whiteColor;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  .copyright {
+    p {
+      @include display_flex();
+      margin: 20px auto;
+      color: $whiteColor;
+    }
+
+    a {
+      padding: 0 5px;
+      color: $yellowColor;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

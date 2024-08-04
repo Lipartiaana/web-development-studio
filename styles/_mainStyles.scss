@@ -16,9 +16,8 @@ body {
     transition: all 0.3s ease;
 
     &.start-creating {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include display_flex();
+      text-transform: uppercase;
       width: 200px;
       color: $blackColor;
       padding: 15px 20px;
