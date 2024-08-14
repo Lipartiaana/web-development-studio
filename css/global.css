@@ -1036,4 +1036,138 @@ footer .copyright a:hover {
 .contact .contact-form form button:hover,
 .contact .social-media form button:hover {
   background-color: #2271a5;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.about-content h1 {
+  color: #2271a5;
+  text-transform: uppercase;
+}
+.about-content h2 {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 1.3rem;
+  }
+}
+.about-content h3 {
+  text-transform: uppercase;
+  color: #c91a95;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .about-content h3 {
+    padding: 0 10px;
+    font-size: 1.1rem;
+  }
+}
+.about-content hr {
+  background-color: #f8a407;
+  width: 15%;
+  height: 4px;
+  border: none;
+}
+.about-content hr:first-of-type {
+  background-color: #36b308;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .about-content hr:first-of-type {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .about-content hr {
+    width: 30%;
+  }
+}
+.about-content hr:last-of-type {
+  background-color: #ffe600;
+  width: 10%;
+}
+@media (max-width: 500px) {
+  .about-content hr:last-of-type {
+    width: 20%;
+  }
+}
+.about-content section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+@media (max-width: 1080px) {
+  .about-content section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
+.about-content .comprehensiveness__text p {
+  margin-right: 40px;
+}
+@media (max-width: 1080px) {
+  .about-content .comprehensiveness__text p {
+    margin-right: 0px;
+  }
+}
+.about-content .comprehensiveness__text__list {
+  margin-top: 10px;
+}
+.about-content .comprehensiveness__text__list li {
+  margin: 5px 20px;
+  list-style-type: disc;
+  color: #c91a95;
+  transition: all 0.5s ease;
+  font-weight: 700;
+}
+.about-content .comprehensiveness__text__list li:hover {
+  color: #2271a5;
+}
+.about-content .comprehensiveness__text__list li a {
+  color: #c91a95;
+  transition: all 0.5s ease;
+}
+.about-content .comprehensiveness__text__list li a:hover {
+  color: #2271a5;
+}
+.about-content .comprehensiveness__img {
+  height: 350px;
+}
+@media (max-width: 768px) {
+  .about-content .comprehensiveness__img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1080px) {
+  .about-content .philosophy {
+    flex-direction: column-reverse;
+  }
+}
+.about-content .philosophy__text {
+  margin-left: 40px;
+}
+@media (max-width: 1080px) {
+  .about-content .philosophy__text {
+    margin-left: 0px;
+  }
+}
+.about-content .philosophy__img {
+  height: 550px;
+}
+@media (max-width: 768px) {
+  .about-content .philosophy__img {
+    height: auto;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=global.css.map */

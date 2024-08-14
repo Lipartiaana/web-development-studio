@@ -1,0 +1,140 @@
+.about-content {
+  @include display_flex();
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  flex-direction: column;
+
+  h1 {
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $darkPinkColor;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 0 10px;
+      font-size: 1.1rem;
+    }
+  }
+
+  hr {
+    &:first-of-type {
+      background-color: $greenColor;
+      width: 20%;
+
+      @media (max-width: 500px) {
+        width: 40%;
+      }
+    }
+
+    background-color: $orangeColor;
+    width: 15%;
+    height: 4px;
+    border: none;
+
+    @media (max-width: 500px) {
+      width: 30%;
+    }
+
+    &:last-of-type {
+      background-color: $yellowHoverColor;
+      width: 10%;
+
+      @media (max-width: 500px) {
+        width: 20%;
+      }
+    }
+  }
+
+  section {
+    @include display_flex();
+    padding: 40px 20px;
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  }
+
+  .comprehensiveness {
+    &__text {
+      p {
+        margin-right: 40px;
+
+        @media (max-width: 1080px) {
+          margin-right: 0px;
+        }
+      }
+
+      &__list {
+        margin-top: 10px;
+
+        li {
+          margin: 5px 20px;
+          list-style-type: disc;
+          color: $darkPinkColor;
+          transition: all 0.5s ease;
+          font-weight: 700;
+
+          &:hover {
+            color: $primary-color;
+          }
+
+          a {
+            color: $darkPinkColor;
+            transition: all 0.5s ease;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    &__img {
+      height: 350px;
+
+      @media (max-width: 768px) {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .philosophy {
+    @media (max-width: 1080px) {
+      flex-direction: column-reverse;
+    }
+
+    &__text {
+      margin-left: 40px;
+
+      @media (max-width: 1080px) {
+        margin-left: 0px;
+      }
+    }
+
+    &__img {
+      height: 550px;
+
+      @media (max-width: 768px) {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
