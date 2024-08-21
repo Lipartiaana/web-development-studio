@@ -1,0 +1,187 @@
+.service {
+  @include display_flex();
+  flex-direction: column;
+  text-align: center;
+  max-width: 1360px;
+  margin: 0px auto;
+
+  @media (max-width: 1360px) {
+    padding: 0px 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 10px;
+  }
+
+  .service__content {
+    @include display_flex(space-between);
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+
+    ul {
+      list-style: none;
+      text-align: left;
+      padding: 0px 20px;
+
+      li {
+        color: $blackColor;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+
+        h3 {
+          color: $primary-color;
+          font-size: 1.2rem;
+
+          a {
+            span {
+              background-color: $primary-color;
+              color: $whiteColor;
+              border-radius: 50%;
+              padding: 0px 7px 5px 7px;
+              font-weight: 900;
+              transition: all 0.5s ease;
+              cursor: pointer;
+
+              &:hover {
+                background-color: $yellowHoverColor;
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__img {
+      @include display_flex();
+      flex-direction: column;
+
+      @media (max-width: 1080px) {
+        padding: 80px 20px;
+      }
+
+      .circles {
+        @include display_flex();
+        gap: 20px;
+
+        .circle {
+          width: 50px;
+          height: 50px;
+          background-color: $greenColor;
+          border-radius: 50%;
+
+          &.c-2 {
+            background-color: $orangeColor;
+          }
+
+          &.c-3 {
+            background-color: $yellowHoverColor;
+          }
+
+          &.c-4 {
+            background-color: $darkPinkColor;
+          }
+
+          &.c-5 {
+            background-color: $purpleColor;
+          }
+
+          &.c-6 {
+            background-color: $primary-color;
+          }
+        }
+      }
+
+      img {
+        height: 300px;
+
+        @media (max-width: 1360px) {
+          height: 200px;
+        }
+
+        @media (max-width: 1080px) {
+          height: auto;
+          max-height: 300px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .plans {
+    margin: 0 auto;
+    padding: 60px 20px;
+
+    h3 {
+      color: $darkPinkColor;
+    }
+
+    &__cards {
+      @include display_flex();
+      gap: 50px;
+      margin-top: 40px;
+
+      @media (max-width: 1280px) {
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      &__card {
+        width: 330px;
+        height: 550px;
+        background-color: $darkBlueColor;
+        padding: 10px;
+        border-radius: 10px;
+
+        @media (max-width: 400px) {
+          width: 300px;
+        }
+
+        &__content {
+          border: 1px solid $whiteColor;
+          border-radius: 10px;
+          padding: 15px;
+          padding-bottom: 20px;
+
+          h4 {
+            color: $yellowColor;
+            text-transform: uppercase;
+          }
+
+          p {
+            text-align: left;
+            height: 100px;
+            color: $whiteColor;
+            font-size: 0.9rem;
+
+            &:last-of-type {
+              height: auto;
+              text-align: center;
+            }
+
+            i {
+              color: $yellowColor;
+              font-size: 1.2rem;
+              padding-right: 5px;
+            }
+          }
+
+          span {
+            color: $whiteColor;
+            display: block;
+            font-size: 2rem;
+            color: $yellowHoverColor;
+          }
+        }
+      }
+    }
+  }
+}
