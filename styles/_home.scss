@@ -116,19 +116,19 @@
     max-width: 30rem;
 
     circle {
-      fill: #ff5154;
+      fill: $darkPinkColor;
       transform: scale(0);
       opacity: 0;
       transform-origin: 50% 50%;
       animation: pulse 4s cubic-bezier(0.5, 0.5, 0, 1) infinite;
 
       &:nth-child(2) {
-        fill: #7fc6a4;
+        fill: $greenColor;
         animation: pulse 4s 0.75s cubic-bezier(0.5, 0.5, 0, 1) infinite;
       }
 
       &:nth-child(3) {
-        fill: #e5f77d;
+        fill: $orangeColor;
         animation: pulse 4s 1.5s cubic-bezier(0.5, 0.5, 0, 1) infinite;
       }
     }

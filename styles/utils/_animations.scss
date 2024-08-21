@@ -24,3 +24,39 @@
     opacity: 1;
   }
 }
+
+@keyframes jumpUp {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-200%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes jumpDown {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(200%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

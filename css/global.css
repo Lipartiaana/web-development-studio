@@ -90,6 +90,40 @@ footer {
     opacity: 1;
   }
 }
+@keyframes jumpUp {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-200%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes jumpDown {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(200%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 body {
   background-color: #fff;
 }
@@ -519,18 +553,18 @@ footer .copyright a:hover {
   max-width: 30rem;
 }
 .main-description .pulse circle {
-  fill: #ff5154;
+  fill: #c91a95;
   transform: scale(0);
   opacity: 0;
   transform-origin: 50% 50%;
   animation: pulse 4s cubic-bezier(0.5, 0.5, 0, 1) infinite;
 }
 .main-description .pulse circle:nth-child(2) {
-  fill: #7fc6a4;
+  fill: #36b308;
   animation: pulse 4s 0.75s cubic-bezier(0.5, 0.5, 0, 1) infinite;
 }
 .main-description .pulse circle:nth-child(3) {
-  fill: #e5f77d;
+  fill: #f8a407;
   animation: pulse 4s 1.5s cubic-bezier(0.5, 0.5, 0, 1) infinite;
 }
 .main-description__illustration {
@@ -1206,6 +1240,11 @@ footer .copyright a:hover {
   text-align: left;
   padding: 0px 20px;
 }
+@media (max-width: 1080px) {
+  .service .service__content ul {
+    margin-bottom: 40px;
+  }
+}
 .service .service__content ul li {
   color: #000;
   font-size: 1.2rem;
@@ -1256,21 +1295,27 @@ footer .copyright a:hover {
   height: 50px;
   background-color: #36b308;
   border-radius: 50%;
+  animation: jumpUp 3s 0ms ease infinite;
 }
 .service .service__content__img .circles .circle.c-2 {
   background-color: #f8a407;
+  animation: jumpUp 3s 0.2s ease infinite;
 }
 .service .service__content__img .circles .circle.c-3 {
   background-color: #ffe600;
+  animation: jumpUp 3s 0.4s ease infinite;
 }
 .service .service__content__img .circles .circle.c-4 {
   background-color: #c91a95;
+  animation: jumpDown 3s 0ms ease infinite;
 }
 .service .service__content__img .circles .circle.c-5 {
   background-color: #2e15b8;
+  animation: jumpDown 3s 0.2s ease infinite;
 }
 .service .service__content__img .circles .circle.c-6 {
   background-color: #2271a5;
+  animation: jumpDown 3s 0.4s ease infinite;
 }
 .service .service__content__img img {
   height: 300px;
@@ -1290,6 +1335,11 @@ footer .copyright a:hover {
 .service .plans {
   margin: 0 auto;
   padding: 60px 20px;
+}
+@media (max-width: 420px) {
+  .service .plans {
+    padding: 60px 10px;
+  }
 }
 .service .plans h3 {
   color: #c91a95;

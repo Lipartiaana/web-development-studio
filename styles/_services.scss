@@ -25,6 +25,10 @@
       text-align: left;
       padding: 0px 20px;
 
+      @media (max-width: 1080px) {
+        margin-bottom: 40px;
+      }
+
       li {
         color: $blackColor;
         font-size: 1.2rem;
@@ -78,25 +82,31 @@
           height: 50px;
           background-color: $greenColor;
           border-radius: 50%;
+          animation: jumpUp 3s 0ms ease infinite;
 
           &.c-2 {
             background-color: $orangeColor;
+            animation: jumpUp 3s 0.2s ease infinite;
           }
 
           &.c-3 {
             background-color: $yellowHoverColor;
+            animation: jumpUp 3s 0.4s ease infinite;
           }
 
           &.c-4 {
             background-color: $darkPinkColor;
+            animation: jumpDown 3s 0ms ease infinite;
           }
 
           &.c-5 {
             background-color: $purpleColor;
+            animation: jumpDown 3s 0.2s ease infinite;
           }
 
           &.c-6 {
             background-color: $primary-color;
+            animation: jumpDown 3s 0.4s ease infinite;
           }
         }
       }
@@ -119,6 +129,10 @@
   .plans {
     margin: 0 auto;
     padding: 60px 20px;
+
+    @media (max-width: 420px) {
+      padding: 60px 10px;
+    }
 
     h3 {
       color: $darkPinkColor;
