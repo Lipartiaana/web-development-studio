@@ -184,6 +184,69 @@ body h2 {
   color: #2271a5;
   text-transform: uppercase;
 }
+body .swal2-container .swal2-title {
+  font-size: 1.5rem;
+  color: #2271a5;
+  text-transform: uppercase;
+}
+body .swal2-container .alert-text {
+  text-align: left;
+  padding: 0 10px;
+}
+body .swal2-container .alert-email-input,
+body .swal2-container .alert-description-input {
+  margin: 20px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+@media (max-width: 400px) {
+  body .swal2-container .alert-email-input,
+  body .swal2-container .alert-description-input {
+    width: 220px;
+  }
+}
+@media (max-width: 300px) {
+  body .swal2-container .alert-email-input,
+  body .swal2-container .alert-description-input {
+    width: auto;
+  }
+}
+body .swal2-container .alert-email-input:hover,
+body .swal2-container .alert-description-input:hover {
+  border-color: #3498db;
+}
+body .swal2-container .alert-email-input:focus,
+body .swal2-container .alert-description-input:focus {
+  outline: none;
+  background-color: rgba(52, 152, 219, 0.5215686275);
+}
+body .swal2-container .alert-email-input::-moz-placeholder, body .swal2-container .alert-description-input::-moz-placeholder {
+  font-size: 0.9rem;
+  color: #333;
+}
+body .swal2-container .alert-email-input::placeholder,
+body .swal2-container .alert-description-input::placeholder {
+  font-size: 0.9rem;
+  color: #333;
+}
+body .swal2-container .alert-description-input {
+  height: 100px;
+}
+body .swal2-container i {
+  color: #2271a5;
+}
+body .swal2-container button {
+  background-color: #042b4d;
+  transition: all 0.3s ease;
+}
+body .swal2-container button:hover {
+  background-color: #2271a5;
+}
 
 .header {
   display: flex;

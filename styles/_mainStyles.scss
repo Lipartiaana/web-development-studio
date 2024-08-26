@@ -60,4 +60,68 @@ body {
     color: $primary-color;
     text-transform: uppercase;
   }
+
+  .swal2-container {
+    .swal2-title {
+      font-size: 1.5rem;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+
+    .alert-text {
+      text-align: left;
+      padding: 0 10px;
+    }
+
+    .alert-email-input,
+    .alert-description-input {
+      margin: 20px;
+      width: 300px;
+      height: 40px;
+      border: 1px solid $GrayBorderColor;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      padding: 5px;
+      font-size: 0.9rem;
+
+      @media (max-width: 400px) {
+        width: 220px;
+      }
+
+      @media (max-width: 300px) {
+        width: auto;
+      }
+
+      &:hover {
+        border-color: $blueBorderColor;
+      }
+
+      &:focus {
+        outline: none;
+        background-color: $blueInputColor;
+      }
+
+      &::placeholder {
+        font-size: 0.9rem;
+        color: $darkGrayColor;
+      }
+    }
+
+    .alert-description-input {
+      height: 100px;
+    }
+
+    i {
+      color: $primary-color;
+    }
+
+    button {
+      background-color: $darkBlueColor;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
 }
