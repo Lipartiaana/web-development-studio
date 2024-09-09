@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Web Studio</title>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/a117407e76.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- global css -->
     <link rel="stylesheet" href="../css/global.css" />
   </head>
@@ -32,5 +37,41 @@
         </ul>
       </div>
     </header>
+    <main class="contact-page-main">
+      <div class="contact-page">
+        <section class="contact-page__contact-form">
+          <h2>Let's Talk</h2>
+          <p>
+            Have more questions? Contact us directly or fill out the form, and
+            we will get back to you promptly.
+          </p>
+          <div class="contact-page__contact-form__form">
+            <label for="name">Your name</label>
+            <input type="text" id="name" />
+            <label for="email">Your Email</label>
+            <input type="text" id="email" />
+            <label for="message">Your Message</label>
+            <textarea id="message"></textarea>
+            <button class="btn">Send Message</button>
+          </div>
+        </section>
+        <section class="contact-page__contact-info">
+          <img src="../assets/contact-img.png" alt="contact us" />
+          <p>
+            <i class="fa-solid fa-location-dot"></i>151 Park Ave. Hartford, CT
+            06106 United States
+          </p>
+          <p><i class="fa-solid fa-phone-volume"></i>+1 (555) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i>info@webstudioexample.com</p>
+        </section>
+      </div>
+      <div class="quote">
+        <blockquote>Create Something that matters!</blockquote>
+        <hr />
+        <hr />
+        <hr />
+      </div>
+    </main>
+    <script src="../js/navigation.js"></script>
   </body>
 </html>

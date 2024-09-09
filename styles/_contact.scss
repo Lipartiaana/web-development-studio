@@ -1,0 +1,164 @@
+.contact-page-main {
+  background-color: $darkBlueColor;
+  padding: 80px;
+
+  @media (max-width: 768px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+
+  .contact-page {
+    @include display_flex(space-around);
+    max-width: 1360px;
+    background-color: $whiteColor;
+    margin: 0 auto;
+    padding: 60px 80px;
+    border-radius: 20px;
+
+    @media (max-width: 1360px) {
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 870px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__contact-form {
+      width: 40%;
+
+      @media (max-width: 870px) {
+        width: 100%;
+
+        @include display_flex();
+        flex-direction: column;
+      }
+
+      &__form {
+        @include display_flex(null, left);
+        flex-direction: column;
+        margin-top: 20px;
+
+        label {
+          color: $primary-color;
+          padding-top: 10px;
+        }
+
+        input,
+        textarea {
+          width: 300px;
+          height: 40px;
+          border: none;
+          background-color: $lightPinkColor;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+          padding: 5px;
+          font-size: 0.9rem;
+
+          @media (max-width: 400px) {
+            width: 220px;
+          }
+
+          @media (max-width: 300px) {
+            width: auto;
+          }
+
+          &:focus {
+            outline: none;
+            background-color: $darkBlueColor;
+            color: $whiteColor;
+          }
+        }
+
+        textarea {
+          height: 100px;
+        }
+
+        .btn {
+          width: 180px;
+          color: $whiteColor;
+          background-color: $darkBlueColor;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    &__contact-info {
+      width: 40%;
+      padding-left: 5%;
+
+      @media (max-width: 1200px) {
+        padding-left: 0;
+      }
+
+      @media (max-width: 870px) {
+        width: 100%;
+
+        @include display_flex();
+        flex-direction: column;
+        text-align: center;
+      }
+
+      img {
+        height: 350px;
+
+        @media (max-width: 996px) {
+          height: 300px;
+        }
+      }
+
+      p {
+        padding: 5px 0 0 10px;
+
+        i {
+          color: $lightPinkColor;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .quote {
+    padding: 30px 0;
+
+    blockquote {
+      text-align: center;
+      color: $whiteColor;
+      padding: 40px 0;
+      font-size: 3rem;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    hr {
+      &:first-of-type {
+        background-color: $greenColor;
+        width: 40%;
+      }
+
+      background-color: $orangeColor;
+      width: 30%;
+      height: 4px;
+      border: none;
+
+      &:last-of-type {
+        background-color: $darkPinkColor;
+        width: 20%;
+      }
+    }
+  }
+}

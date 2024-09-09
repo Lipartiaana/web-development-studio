@@ -1560,4 +1560,171 @@ footer .copyright a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.contact-page-main {
+  background-color: #042b4d;
+  padding: 80px;
+}
+@media (max-width: 768px) {
+  .contact-page-main {
+    padding: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-page-main {
+    padding: 20px;
+  }
+}
+.contact-page-main .contact-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1360px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+@media (max-width: 1360px) {
+  .contact-page-main .contact-page {
+    padding: 60px 40px;
+  }
+}
+@media (max-width: 870px) {
+  .contact-page-main .contact-page {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.contact-page-main .contact-page__contact-form {
+  width: 40%;
+}
+@media (max-width: 870px) {
+  .contact-page-main .contact-page__contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.contact-page-main .contact-page__contact-form__form {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.contact-page-main .contact-page__contact-form__form label {
+  color: #2271a5;
+  padding-top: 10px;
+}
+.contact-page-main .contact-page__contact-form__form input,
+.contact-page-main .contact-page__contact-form__form textarea {
+  width: 300px;
+  height: 40px;
+  border: none;
+  background-color: #d482ed;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+@media (max-width: 400px) {
+  .contact-page-main .contact-page__contact-form__form input,
+  .contact-page-main .contact-page__contact-form__form textarea {
+    width: 220px;
+  }
+}
+@media (max-width: 300px) {
+  .contact-page-main .contact-page__contact-form__form input,
+  .contact-page-main .contact-page__contact-form__form textarea {
+    width: auto;
+  }
+}
+.contact-page-main .contact-page__contact-form__form input:focus,
+.contact-page-main .contact-page__contact-form__form textarea:focus {
+  outline: none;
+  background-color: #042b4d;
+  color: #fff;
+}
+.contact-page-main .contact-page__contact-form__form textarea {
+  height: 100px;
+}
+.contact-page-main .contact-page__contact-form__form .btn {
+  width: 180px;
+  color: #fff;
+  background-color: #042b4d;
+  transition: all 0.3s ease;
+}
+.contact-page-main .contact-page__contact-form__form .btn:hover {
+  background-color: #2271a5;
+}
+.contact-page-main .contact-page__contact-info {
+  width: 40%;
+  padding-left: 5%;
+}
+@media (max-width: 1200px) {
+  .contact-page-main .contact-page__contact-info {
+    padding-left: 0;
+  }
+}
+@media (max-width: 870px) {
+  .contact-page-main .contact-page__contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.contact-page-main .contact-page__contact-info img {
+  height: 350px;
+}
+@media (max-width: 996px) {
+  .contact-page-main .contact-page__contact-info img {
+    height: 300px;
+  }
+}
+.contact-page-main .contact-page__contact-info p {
+  padding: 5px 0 0 10px;
+}
+.contact-page-main .contact-page__contact-info p i {
+  color: #d482ed;
+  margin-right: 5px;
+}
+.contact-page-main .quote {
+  padding: 30px 0;
+}
+.contact-page-main .quote blockquote {
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .contact-page-main .quote blockquote {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .contact-page-main .quote blockquote {
+    font-size: 2.2rem;
+  }
+}
+.contact-page-main .quote hr {
+  background-color: #f8a407;
+  width: 30%;
+  height: 4px;
+  border: none;
+}
+.contact-page-main .quote hr:first-of-type {
+  background-color: #36b308;
+  width: 40%;
+}
+.contact-page-main .quote hr:last-of-type {
+  background-color: #c91a95;
+  width: 20%;
 }/*# sourceMappingURL=global.css.map */
