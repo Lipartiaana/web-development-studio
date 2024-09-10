@@ -1565,6 +1565,7 @@ footer .copyright a:hover {
 .contact-page-main {
   background-color: #042b4d;
   padding: 80px;
+  border-bottom: 1px solid #fff;
 }
 @media (max-width: 768px) {
   .contact-page-main {

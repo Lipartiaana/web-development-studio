@@ -1,6 +1,7 @@
 .contact-page-main {
   background-color: $darkBlueColor;
   padding: 80px;
+  border-bottom: 1px solid $whiteColor;
 
   @media (max-width: 768px) {
     padding: 40px;
