@@ -38,53 +38,55 @@
       }
 
       &__form {
-        @include display_flex(null, left);
-        flex-direction: column;
         margin-top: 20px;
 
-        label {
-          color: $primary-color;
-          padding-top: 10px;
-        }
+        form {
+          @include display_flex(null, left);
+          flex-direction: column;
 
-        input,
-        textarea {
-          width: 300px;
-          height: 40px;
-          border: none;
-          background-color: $lightPinkColor;
-          border-radius: 5px;
-          transition: all 0.3s ease;
-          padding: 5px;
-          font-size: 0.9rem;
+          label {
+            color: $primary-color;
+            padding-top: 10px;
+          }
+          input,
+          textarea {
+            width: 300px;
+            height: 40px;
+            border: none;
+            background-color: $lightPinkColor;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            padding: 5px;
+            font-size: 0.9rem;
 
-          @media (max-width: 400px) {
-            width: 220px;
+            @media (max-width: 400px) {
+              width: 220px;
+            }
+
+            @media (max-width: 300px) {
+              width: auto;
+            }
+
+            &:focus {
+              outline: none;
+              background-color: $darkBlueColor;
+              color: $whiteColor;
+            }
           }
 
-          @media (max-width: 300px) {
-            width: auto;
+          textarea {
+            height: 100px;
           }
 
-          &:focus {
-            outline: none;
-            background-color: $darkBlueColor;
+          .btn {
+            width: 180px;
             color: $whiteColor;
-          }
-        }
+            background-color: $darkBlueColor;
+            transition: all 0.3s ease;
 
-        textarea {
-          height: 100px;
-        }
-
-        .btn {
-          width: 180px;
-          color: $whiteColor;
-          background-color: $darkBlueColor;
-          transition: all 0.3s ease;
-
-          &:hover {
-            background-color: $primary-color;
+            &:hover {
+              background-color: $primary-color;
+            }
           }
         }
       }

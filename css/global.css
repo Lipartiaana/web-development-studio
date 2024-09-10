@@ -1610,17 +1610,19 @@ footer .copyright a:hover {
   }
 }
 .contact-page-main .contact-page__contact-form__form {
+  margin-top: 20px;
+}
+.contact-page-main .contact-page__contact-form__form form {
   display: flex;
   align-items: left;
   flex-direction: column;
-  margin-top: 20px;
 }
-.contact-page-main .contact-page__contact-form__form label {
+.contact-page-main .contact-page__contact-form__form form label {
   color: #2271a5;
   padding-top: 10px;
 }
-.contact-page-main .contact-page__contact-form__form input,
-.contact-page-main .contact-page__contact-form__form textarea {
+.contact-page-main .contact-page__contact-form__form form input,
+.contact-page-main .contact-page__contact-form__form form textarea {
   width: 300px;
   height: 40px;
   border: none;
@@ -1631,33 +1633,33 @@ footer .copyright a:hover {
   font-size: 0.9rem;
 }
 @media (max-width: 400px) {
-  .contact-page-main .contact-page__contact-form__form input,
-  .contact-page-main .contact-page__contact-form__form textarea {
+  .contact-page-main .contact-page__contact-form__form form input,
+  .contact-page-main .contact-page__contact-form__form form textarea {
     width: 220px;
   }
 }
 @media (max-width: 300px) {
-  .contact-page-main .contact-page__contact-form__form input,
-  .contact-page-main .contact-page__contact-form__form textarea {
+  .contact-page-main .contact-page__contact-form__form form input,
+  .contact-page-main .contact-page__contact-form__form form textarea {
     width: auto;
   }
 }
-.contact-page-main .contact-page__contact-form__form input:focus,
-.contact-page-main .contact-page__contact-form__form textarea:focus {
+.contact-page-main .contact-page__contact-form__form form input:focus,
+.contact-page-main .contact-page__contact-form__form form textarea:focus {
   outline: none;
   background-color: #042b4d;
   color: #fff;
 }
-.contact-page-main .contact-page__contact-form__form textarea {
+.contact-page-main .contact-page__contact-form__form form textarea {
   height: 100px;
 }
-.contact-page-main .contact-page__contact-form__form .btn {
+.contact-page-main .contact-page__contact-form__form form .btn {
   width: 180px;
   color: #fff;
   background-color: #042b4d;
   transition: all 0.3s ease;
 }
-.contact-page-main .contact-page__contact-form__form .btn:hover {
+.contact-page-main .contact-page__contact-form__form form .btn:hover {
   background-color: #2271a5;
 }
 .contact-page-main .contact-page__contact-info {
