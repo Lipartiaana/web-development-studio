@@ -1,6 +1,6 @@
 const requestPlan = async (planType) => {
   const { value: formValues } = await Swal.fire({
-    title: `Request ${planType} plan`,
+    title: planType === "Normal" ? "Create Task" : `Request ${planType} plan`,
     html:
       '<p class="alert-text"><i class="fa-solid fa-envelope"></i> Please enter your email, Where you would like to receive a response to your request.</p>' +
       '<input class="alert-email-input" id="swal-input1" class="swal2-input" placeholder="Enter your email address">' +
@@ -37,12 +37,26 @@ const requestPlan = async (planType) => {
   }
 };
 
-document
-  .getElementById("book-business-plan")
-  .addEventListener("click", () => requestPlan("Business"));
-document
-  .getElementById("book-classic-plan")
-  .addEventListener("click", () => requestPlan("Classic"));
-document
-  .getElementById("book-ecommerce-plan")
-  .addEventListener("click", () => requestPlan("E-commerce"));
+if (document.getElementById("book-business-plan")) {
+  document
+    .getElementById("book-business-plan")
+    .addEventListener("click", () => requestPlan("Business"));
+}
+
+if (document.getElementById("book-classic-plan")) {
+  document
+    .getElementById("book-classic-plan")
+    .addEventListener("click", () => requestPlan("Classic"));
+}
+
+if (document.getElementById("book-ecommerce-plan")) {
+  document
+    .getElementById("book-ecommerce-plan")
+    .addEventListener("click", () => requestPlan("E-commerce"));
+}
+
+if (document.getElementById("create-task")) {
+  document
+    .getElementById("create-task")
+    .addEventListener("click", () => requestPlan("Normal"));
+}

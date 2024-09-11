@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Website - WebStudio</title>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/a117407e76.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- global css -->
     <link rel="stylesheet" href="../css/global.css" />
   </head>
@@ -32,5 +37,61 @@
         </ul>
       </div>
     </header>
+    <div class="create-page">
+      <div class="create-page__heading">
+        <h2>What kind of website do you need?</h2>
+        <h3>Upload a technical task</h3>
+      </div>
+      <div class="task-container">
+        <div class="tech-task">
+          <input
+            type="file"
+            id="fileInput"
+            accept=".doc, .docx, .xls, .xlsx, .pdf"
+          />
+          <button class="btn" onclick="uploadFile()">Upload</button>
+          <div class="uploaded-container">
+            <h4>Uploaded File:</h4>
+            <a id="downloadLink" style="display: none" download
+              >Download File</a
+            >
+            <div class="uploaded-file"></div>
+          </div>
+          <p>
+            Or send to us on an e-mail:
+            <p
+              ><i class="fa-solid fa-envelope pink-icon"></i>
+              info@webstudioexample.com</p
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-triangle-exclamation red-icon"></i>
+            Please include your name, phone number and email in the technical
+            assignment or in the letter. we will contact you within 24 hours.
+          </p>
+        </div>
+        <img src="../assets/create-website.png" alt="Create Website" />
+      </div>
+
+      <div class="other-ways">
+        <div class="other-ways__way">
+          <h3><i class="fa-solid fa-circle-exclamation"></i></i>Don't have a technical task? fill out the form</h3>
+          <button id="create-task" class="btn" data-swal-template="#my-template">
+          Create task
+          </button>
+        </div>
+        <div class="other-ways__way">
+          <h3><i class="fa-solid fa-rectangle-list"></i>We have some offers for combined services</h3>
+          <a href="./service.html#combined-services"> 
+          <button class="btn">See Plans</button></a> 
+        </div>
+      </div>
+
+    </div>
+    <!-- Navigation script -->
+    <script src="../js/navigation.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/booking.js"></script>
   </body>
 </html>

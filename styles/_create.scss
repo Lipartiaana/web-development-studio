@@ -1,0 +1,134 @@
+.create-page {
+  @include display_flex(null, flex-start);
+  flex-direction: column;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  &__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    color: $darkPinkColor;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  .task-container {
+    @include display_flex();
+    width: 100%;
+    gap: 20%;
+    margin-bottom: 40px;
+
+    @media (max-width: 1360px) {
+      gap: 10%;
+    }
+
+    @media (max-width: 840px) {
+      gap: 5%;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .tech-task {
+      @include display_flex();
+      flex-direction: column;
+      width: 400px;
+      background-color: $darkBlueColor;
+      border-radius: 6px;
+      padding: 40px;
+      color: $whiteColor;
+      gap: 10px;
+
+      @media (max-width: 996px) {
+        width: 350px;
+      }
+
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+
+      #fileInput {
+        width: 220px;
+      }
+
+      .uploaded-container {
+        @include display_flex();
+
+        .uploaded-file {
+          img {
+            width: 50px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      i {
+        &.red-icon {
+          color: $redColor;
+        }
+
+        &.pink-icon {
+          color: $lightPinkColor;
+        }
+      }
+    }
+
+    img {
+      width: 400px;
+
+      @media (max-width: 996px) {
+        width: 350px;
+      }
+
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .other-ways {
+    @include display_flex();
+    gap: 50px;
+    margin: 0 auto;
+
+    @media (max-width: 680px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__way {
+      @include display_flex();
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      border-radius: 6px;
+
+      i {
+        margin-right: 5px;
+        font-size: 1.5rem;
+        color: $greenColor;
+      }
+
+      .btn {
+        align-self: center;
+        background-color: $darkBlueColor;
+        color: $whiteColor;
+
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
