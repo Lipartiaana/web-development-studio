@@ -1805,13 +1805,20 @@ footer .copyright a:hover {
 .create-page .task-container .tech-task #fileInput {
   width: 220px;
 }
+.create-page .task-container .tech-task button {
+  margin: 0 0 20px 0;
+}
 .create-page .task-container .tech-task .uploaded-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.create-page .task-container .tech-task .uploaded-container .uploaded-file img {
-  width: 50px;
+.create-page .task-container .tech-task .uploaded-container .uploaded-file #downloadLink {
+  color: #fff;
+}
+.create-page .task-container .tech-task .uploaded-container .uploaded-file i {
+  font-size: 1.5rem;
+  padding-left: 5px;
   cursor: pointer;
 }
 .create-page .task-container .tech-task i.red-icon {
