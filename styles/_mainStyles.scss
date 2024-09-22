@@ -1,6 +1,10 @@
 body {
   background-color: $whiteColor;
 
+  .main {
+    min-height: calc(100vh - 420.5px);
+  }
+
   .btn {
     margin-top: 20px;
     display: inline-block;
@@ -24,7 +28,7 @@ body {
       border-radius: 8px;
       font-size: 1.2rem;
 
-      &.main {
+      &.main-btn {
         position: absolute;
         top: 700px;
         left: 50%;

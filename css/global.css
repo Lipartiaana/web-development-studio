@@ -127,6 +127,9 @@ footer {
 body {
   background-color: #fff;
 }
+body .main {
+  min-height: calc(100vh - 420.5px);
+}
 body .btn {
   margin-top: 20px;
   display: inline-block;
@@ -152,7 +155,7 @@ body .btn.start-creating {
   border-radius: 8px;
   font-size: 1.2rem;
 }
-body .btn.start-creating.main {
+body .btn.start-creating.main-btn {
   position: absolute;
   top: 700px;
   left: 50%;
@@ -164,7 +167,7 @@ body .btn.start-creating.main {
   transform: translateX(-50%);
 }
 @media (max-width: 768px) {
-  body .btn.start-creating.main {
+  body .btn.start-creating.main-btn {
     top: 250px;
     width: 200px;
     height: 60px;
